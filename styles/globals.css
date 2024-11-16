@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer tailwind-base, primereact, tailwind-utilities;
+ 
+@layer tailwind-base {
+    @tailwind base;
+}
+
+/* common style */
+body { font-size: 14px; 
+    background-image: url("/assets/images/backgroundImg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+}
+
+@font-face {
+  font-family: 'hexa-erate-dashboard';
+  src:  url('/assets/fonts/hexa-erate-dashboard.eot?l3vwjx');
+  src:  url('/assets/fonts/hexa-erate-dashboard.eot?l3vwjx#iefix') format('embedded-opentype'),
+    url('/assets/fonts/hexa-erate-dashboard.ttf?l3vwjx') format('truetype'),
+    url('/assets/fonts/hexa-erate-dashboard.woff?l3vwjx') format('woff'),
+    url('/assets/fonts/hexa-erate-dashboard.svg?l3vwjx#hexa-erate-dashboard') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="hex-rate-"], [class*=" hex-rate-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'hexa-erate-dashboard' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hex-rate-archive:before {content: "\e900";}
+.hex-rate-arrow-down:before {content: "\e901";}
+.hex-rate-arrow-down-line:before {content: "\e902";}
+.hex-rate-arrow-left-line:before {content: "\e903";}
+.hex-rate-arrow-right:before {content: "\e904";}
+.hex-rate-arrow-up:before {content: "\e905";}
+.hex-rate-calendar:before {content: "\e906";}
+.hex-rate-circule-fill:before {content: "\e907";}
+.hex-rate-close-circle:before {content: "\e908";}
+.hex-rate-export:before {content: "\e909";}
+.hex-rate-filter-search:before {content: "\e90a";}
+.hex-rate-info-circle:before {content: "\e90b";}
+.hex-rate-lamp-charge:before {content: "\e90c";}
+.hex-rate-msg:before {content: "\e90d";}
+.hex-rate-plus:before {content: "\e90e";}
+.hex-rate-search-zoom-in:before {content: "\e90f";}
+.hex-rate-sidebar-left:before {content: "\e910";}
+.hex-rate-three-dots:before {content: "\e911";}
+.hex-rate-unlock:before {content: "\e912";} 
+.hex-rate-edit:before {content: "\e913";} 
+
+.main_wrap {
+    background-image: url("/assets/images/landing-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p-button:focus, .p-dropdown:not(.p-disabled).p-focus, .p-inputtext:enabled:focus, .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus, .p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus, .p-calendar:not(.p-calendar-disabled).p-focus > .p-inputtext { box-shadow: none !important; }
+/* common style End */
+
+/* V.K style */
+.box-shadow1 { box-shadow: 0px 8px 20px 0px rgba(9, 14, 20, 0.20); }
+.box-shadow2 {box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.10), 0px 2px 4px -2px rgba(0, 0, 0, 0.05);}
+
+.filter { backdrop-filter: blur(7.5px); }
+
+
+.custCalendar { position: relative; }
+.custCalendar .p-inputtext { background: #1F2A37; border-color: #374151; border-radius: 8px; width: 100%; color: #F2F2F5; font-size: 14px; padding: 12px 16px; }
+.custCalendar:after { content: "\e906"; font-family: 'hexa-erate-dashboard'; color: white; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); }
+
+.custDropdown.p-dropdown{ background: blue; border-color: #374151; background: #1F2A37; border-radius: 8px; }
+.custDropdown.p-dropdown .p-dropdown-label.p-placeholder { color: white; }
+.custDropdown.p-dropdown .p-dropdown-label.p-placeholder, .custDropdown.p-dropdown .p-inputtext { color: white; font-size: 14px; }
+.custDropdown.p-dropdown .p-inputtext { padding: 12px 16px; }
+.custDropdown.padd-6.p-dropdown .p-inputtext { padding: 6px 12px; }
+
+.bdr-top { position: relative; }
+.bdr-top:before { content: ""; width: 100%; max-width: 30px; height: 2px; border-radius: 4px; position: absolute; top: 0; left: 0; }
+.bdr-top.bgColor1:before { background: #D73F09; }
+.bdr-top.bgColor2:before { background: #948C7B; }
+.bdr-top.bgColor3:before { background: #324DA6; }
+.bdr-top.bgColor4:before { background: #F8B720; }
+.bdr-top.bgColor5:before { background: #FBE8F2; }
+.bdr-top.bgColor6:before { background: #057A55; }
+
+.filtershadow1 { filter: drop-shadow(0px 0px 12.8px var(--Brand-Support-1-pure, #057A55)); } 
+.filtershadow2 { filter: drop-shadow(0px 0px 12.8px var(--Brand-Highlight-pure, #D62C72)); } 
+.filtershadow3 { filter: drop-shadow(0px 0px 12.8px var(--Brand-Support-2-pure, #D67309)); } 
+.filtershadow4 { filter: drop-shadow(0px 0px 12.8px var(--Brand-Neutral-pure, #768FB5)); }
+.filtershadow5 { filter: drop-shadow(0px 0px 12.8px var(--Brand-Primary-pure, #1570EF)); }
+
+.custRadioButton.p-radiobutton .p-radiobutton-box { border-color: #374151; border-width: 1px; background: #1F2A37; }
+.custRadioButton.p-radiobutton .p-radiobutton-box .p-radiobutton-icon { background: #1F2A37; }
+.custRadioButton.p-radiobutton .p-radiobutton-box.p-highlight { background: #1570EF; border-color: #1570EF; }
+
+.custTabList .react-tabs__tab { outline: none; }
+.custTabList .react-tabs__tab-list { display: inline-flex; align-items: center; overflow: hidden; border-radius: 8px; }
+.custTabList .react-tabs__tab { display: inline-block; padding: 4px 10px; cursor: pointer; color: #9EA3AA; font-size: 14px; font-weight: 500; }
+.custTabList.tabBg1 .react-tabs__tab.react-tabs__tab--selected, .custTabList.tabBg2 .react-tabs__tab.react-tabs__tab--selected { background: #1A56DB; color: white; }
+.custTabList.tabBg1 .react-tabs__tab { background: #1F2A37; }
+.custTabList.tabBg2 .react-tabs__tab { background: #111928; }
+.custTabList.tabBg1 .react-tabs__tab.react-tabs__tab--selected:focus { outline: none; }
+.map-popup.p-tooltip .p-tooltip-text{
+  background: #1F2A37;
+  padding: 12px;
+  border-radius: 16px;
+}
+.map-container .legend-container, .map-container .leaflet-popup-close-button { display: none; }
+.leaflet-container { height: 1200px; } 
+.leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+.map-container .leaflet-popup-content { margin: 12px; min-width: 226px; }
+.map-container .leaflet-popup-content-wrapper, .map-container .leaflet-popup-tip { background: #1F2A37; }
+.map-container.leaflet-container { z-index: 1; }
+
+/* V.K style End */
+
+
+.FilterDropdown .p-dropdown .p-dropdown-label.p-placeholder 
+{
+    color:#fff;
+}
+.FilterDropdown .p-dropdown .p-dropdown-trigger 
+{
+    color:#fff;
+    width: 100px;
+}
+.customFilter .p-dropdown-items {
+    background-color: #28303f;
+    color: #FFF;
+    padding: 5px 5px;
+}
+.customFilter .p-dropdown-panel .p-dropdown-items .p-dropdown-item 
+{
+    color: #FFF;
+}
+
+/***********************************************
+            Responsive
+***********************************************/
+
+@media (min-width:1800px) { 
+    body { font-size: 0.729vw; }
+   
+    .filterTabs .react-tabs__tab { border: 0.052vw solid #4B5563; border-radius: 1.563vw; padding: 0.625vw 0.729vw; }
+    .filterTabs .react-tabs__tab:not(:last-child) { margin-right: 0.781vw; }
+
+
+}
+@media only screen and (max-width: 1450px) {
+    .tabsdropdown .p-dropdown-label.p-inputtext.p-placeholder {
+      font-size: 10px;
+    padding:0px 5px;
+     
+  }
+   
+  .tablistsdata .react-tabs__tab {
+      cursor: pointer;
+      padding: 6px 8.5px;
+      color: white;
+      font-size: 10px;
+      background: #111928;
+  }
+  }
+
+
+@media (max-width:1280px) { 
+    .custTabs .react-tabs__tab { font-size: 12px; }
+ }
+
+@media (max-width:1024px) {  }
+
+@media (max-width:991px) {  }
+
+@media (max-width:767px) {  }
+
+@media (max-width:575px) {  }
+
